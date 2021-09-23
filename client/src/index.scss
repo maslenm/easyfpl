@@ -1,0 +1,30 @@
+@import "styles/abstracts/functions";
+@import "styles/abstracts/mixins";
+@import "styles/abstracts/variables";
+
+@import "styles/base/animations";
+@import "styles/base/base";
+@import "styles/base/typography";
+@import "styles/base/utilities";
+
+@import "styles/components/buttons";
+
+@import "styles/layout/header";
+@import "styles/layout/main";
+@import "styles/layout/footer";
+
+@import "styles/pages/home";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
