@@ -1,0 +1,15 @@
+.feature-cards {
+  display: flex;
+  justify-content: center;
+}
+.feature-card {
+  box-sizing: border-box;
+  border: solid #e5e5e5;
+  border-radius: 10px;
+  min-width: 13rem;
+  max-width: fit-content;
+  min-height: 13rem;
+  margin: 0.8rem;
+  padding: 1.5rem;
+  background-color: $color-white;
+}

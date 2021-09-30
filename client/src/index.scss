@@ -9,6 +9,7 @@
 
 @import "styles/components/buttons";
 @import "styles/components/nav-btn";
+@import "styles/components/feature-cards";
 
 @import "styles/layout/header";
 @import "styles/layout/container";
@@ -16,6 +17,7 @@
 @import "styles/layout/footer";
 
 @import "styles/pages/home";
+@import "styles/pages/landing";
 
 body {
   margin: 0;

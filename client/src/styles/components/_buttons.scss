@@ -9,7 +9,19 @@
   cursor: pointer;
 
   &--login-register {
+    display: block;
     color: $color-white;
     background-color: $color-purple-primary;
+  }
+
+  &--register {
+    display: block;
+    color: $color-white;
+    background-color: $color-purple-primary;
+  }
+  &--start {
+    display: block;
+    color: $color-white;
+    background-color: $color-green-primary;
   }
 }

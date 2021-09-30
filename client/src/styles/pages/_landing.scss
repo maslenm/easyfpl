@@ -1,0 +1,21 @@
+.landing-header {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  justify-self: center;
+
+  &__title {
+    border: none;
+  }
+}
+
+.landing-content {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-self: center;
+  text-align: center;
+}
+
+.start-cta {
+  display: inline-block;
+  margin: 2.5rem;
+}
