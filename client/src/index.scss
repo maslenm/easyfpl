@@ -1,4 +1,4 @@
-@import "styles/base/reset";
+// @import "styles/base/reset";s
 @import "styles/abstracts/functions";
 @import "styles/abstracts/mixins";
 @import "styles/abstracts/variables";
@@ -9,6 +9,7 @@
 @import "styles/base/utilities";
 
 @import "styles/components/buttons";
+@import "styles/components/nav-btn";
 
 @import "styles/layout/header";
 @import "styles/layout/container";
