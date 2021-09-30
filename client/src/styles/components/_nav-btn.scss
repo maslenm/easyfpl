@@ -1,0 +1,34 @@
+.nav-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+  border: solid 3px $color-purple-primary;
+
+  &__burger {
+    height: 3px;
+    width: 2rem;
+    background-color: $color-purple-primary;
+    border-radius: 5px;
+
+    &::before,
+    &::after {
+      background-color: $color-purple-primary;
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 2rem;
+      display: block;
+      border-radius: 5px;
+    }
+    &::before {
+      transform: translateY(-8px);
+    }
+    &::after {
+      transform: translateY(8px);
+    }
+  }
+}
