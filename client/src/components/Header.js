@@ -1,13 +1,13 @@
 const Header = () => (
   <header className="header">
-    <h1>
+    <h1 className="header__title">
       EasyFPL<span>Player Manager Tool</span>
     </h1>
 
-    <button className="header__btn--login">Log in / Register</button>
+    <button className="btn btn--login-register">Log in / Register</button>
 
-    <div className="header__nav-btn">
-      <div className="header__nav-burger"></div>
+    <div className="nav-btn">
+      <div className="nav-btn__burger"></div>
     </div>
   </header>
 );

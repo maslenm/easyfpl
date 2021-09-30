@@ -8,56 +8,7 @@
   align-items: center;
   padding: 2rem;
 
-  &__btn {
-    &--login {
-      color: $color-white;
-      background-color: $color-purple-primary;
-      font-weight: bold;
-      box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
-      border-radius: 5px;
-      border: none;
-      padding: 1rem 1rem;
-      cursor: pointer;
-    }
-  }
-
-  &__nav-btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    width: 4rem;
-    cursor: pointer;
-    border: solid 3px $color-purple-primary;
-    // border-radius: 50%;
-  }
-
-  &__nav-burger {
-    height: 3px;
-    width: 2rem;
-    background-color: $color-purple-primary;
-    border-radius: 5px;
-
-    &::before,
-    &::after {
-      background-color: $color-purple-primary;
-      content: "";
-      position: absolute;
-      height: 3px;
-      width: 2rem;
-      display: block;
-      border-radius: 5px;
-    }
-    &::before {
-      transform: translateY(-8px);
-    }
-    &::after {
-      transform: translateY(8px);
-    }
-  }
-
-  & > h1 {
+  &__title {
     font-size: 3rem;
     display: flex;
     flex-direction: column;
