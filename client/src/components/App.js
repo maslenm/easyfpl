@@ -2,7 +2,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Landing from "./Landing";
-const Home = () => <h2>Home</h2>;
+import Home from "./Home";
 const Login = () => <h2>Login</h2>;
 const Instructions = () => <h2>Instructions</h2>;
 const Team = () => <h2>Team</h2>;
