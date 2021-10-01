@@ -1,0 +1,42 @@
+.landing-header {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  padding: 1rem;
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: none;
+    color: $color-green-primary;
+
+    &--purple {
+      color: $color-purple-primary;
+    }
+    &--black {
+      color: $color-black;
+    }
+  }
+}
+
+.landing-content {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 1.5rem;
+  justify-self: center;
+  text-align: center;
+
+  &__text-description {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
+}
+.start-cta {
+  display: inline-block;
+  margin: 2.5rem;
+}
