@@ -1,7 +1,11 @@
 .btn {
   font-family: $font-primary;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: $font-weight-xbold;
+
+  &--start {
+    font-size: 2.5rem;
+  }
 }
 
 .landing-header {
@@ -10,13 +14,23 @@
   }
 }
 
-.feature-card {
-  &__title {
-    font-size: 2.4rem;
-    font-weight: $font-weight-xbold;
+.landing-content {
+  &__text-description {
+    font-size: 1.5rem;
   }
+}
 
+.feature-card {
   &__text-content {
     font-size: 1rem;
   }
+}
+
+.heading-1 {
+  font-size: 3.6rem;
+  font-weight: $font-weight-bold;
+}
+.heading-2 {
+  font-size: 2.4rem;
+  font-weight: $font-weight-xbold;
 }

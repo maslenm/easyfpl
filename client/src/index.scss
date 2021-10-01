@@ -10,6 +10,7 @@
 @import "styles/components/buttons";
 @import "styles/components/nav-btn";
 @import "styles/components/feature-cards";
+@import "styles/components/heading";
 
 @import "styles/layout/header";
 @import "styles/layout/container";
@@ -26,6 +27,7 @@ body {
   //   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $color-canvas;
 }
 
 code {
