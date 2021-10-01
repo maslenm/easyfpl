@@ -8,6 +8,11 @@
   }
 }
 
+.menu-btn {
+  font-size: 1.8rem;
+  font-weight: $font-weight-regular;
+}
+
 .landing-header {
   &__title {
     font-size: 3.6rem;
@@ -33,4 +38,9 @@
 .heading-2 {
   font-size: 2.4rem;
   font-weight: $font-weight-xbold;
+}
+
+.text-unregistered {
+  font-size: 1.2rem;
+  font-weight: $font-weight-regular;
 }
