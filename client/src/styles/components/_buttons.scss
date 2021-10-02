@@ -28,6 +28,19 @@
     color: $color-white;
     background-color: $color-green-primary;
   }
+
+  &--form-login {
+    display: block;
+    color: $color-white;
+    background-color: $color-green-primary;
+    margin: 1rem;
+  }
+  &--form-register {
+    display: block;
+    color: $color-white;
+    background-color: $color-purple-primary;
+    margin: 1rem;
+  }
 }
 
 .menu-btn {
