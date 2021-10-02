@@ -19,6 +19,18 @@
   }
 }
 
+.header {
+  &__title {
+    font-size: 3rem;
+
+    &--span {
+      display: block;
+      font-size: 1.2rem;
+      color: $color-black;
+    }
+  }
+}
+
 .landing-content {
   &__text-description {
     font-size: 1.5rem;
