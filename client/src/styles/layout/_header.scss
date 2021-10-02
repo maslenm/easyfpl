@@ -6,15 +6,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
 
   &__title {
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
+    color: $color-green-primary;
+    margin: 0rem;
 
-    & span {
-      font-size: 1.2rem;
+    &--purple {
+      color: $color-purple-primary;
+    }
+    &--black {
+      color: $color-black;
+    }
+
+    &--span {
+      display: block;
+      color: $color-black;
     }
   }
 }
