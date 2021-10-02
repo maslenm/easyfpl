@@ -44,3 +44,22 @@
   font-size: 1.2rem;
   font-weight: $font-weight-regular;
 }
+
+.text-register {
+  font-size: 1.2rem;
+  font-weight: $font-weight-regular;
+}
+
+.login-register-form {
+  &__input {
+    font-size: 1.8rem;
+    font-weight: $font-weight-bold;
+    color: $color-form-input-placeholder;
+  }
+}
+
+.login-helper-link {
+  font-size: 1.3rem;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+}
