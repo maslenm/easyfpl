@@ -43,13 +43,13 @@ const Landing = () => (
           <p className="feature-card__text-content">
             Register to save players to your team to keep track of your picks.
           </p>
-          <Link to="/Login" role="button" className="btn btn--register">
+          <Link to="/login" role="button" className="btn btn--register">
             Register
           </Link>
         </div>
       </div>
       <div className="start-cta">
-        <Link to="/Home" role="button" className="btn btn--start">
+        <Link to="/home" role="button" className="btn btn--start">
           Get Started &rarr;
         </Link>
       </div>
