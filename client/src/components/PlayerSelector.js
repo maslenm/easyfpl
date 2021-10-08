@@ -15,6 +15,51 @@ const PlayerSelector = () => (
         <div className="tab-group__tab">PLAYER SEARCH</div>
       </section>
       <section className="tab-content">
+        <div className="option-menus">
+          <div className="option-menu">
+            <label className="option-menus__label" for="position-select">
+              Position
+            </label>
+
+            <select
+              className="option-menus__select"
+              name="position"
+              id="position"
+            >
+              <option value="fwd">fwd</option>
+              <option value="mid">mid</option>
+              <option value="def">def</option>
+              <option value="goal">goal</option>
+            </select>
+          </div>
+
+          <div className="option-menu">
+            <label className="option-menus__label" for="budget-select">
+              Budget
+            </label>
+
+            <select className="option-menus__select" name="budget" id="budget">
+              <option value="4.0">4.0</option>
+              <option value="5.0">5.0</option>
+              <option value="6.0">6.0</option>
+              <option value="7.0">7.0</option>
+            </select>
+          </div>
+
+          <div className="option-menu">
+            <label className="option-menus__label" for="games-select">
+              Games
+            </label>
+
+            <select className="option-menus__select" name="games" id="games">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+
         <div className="playerCard">
           <header className="playerCard__header">
             <h4>PLAYER NAME</h4>

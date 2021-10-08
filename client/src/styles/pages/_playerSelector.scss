@@ -1,8 +1,8 @@
 .player-selector-header {
   grid-row-start: 1;
   grid-row-end: 2;
-  grid-column-start: 5;
-  grid-column-end: 7;
+  grid-column-start: 1;
+  grid-column-end: -1;
   padding: 1rem;
 
   &__title {
@@ -62,10 +62,39 @@
   }
 }
 
-.playerCard {
-  box-sizing: border-box;
+.option-menu {
+  background-color: $color-white;
+  border: 1px solid $color-black;
+  width: fit-content;
+  padding: 0.5rem;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.option-menus {
+  display: flex;
   grid-row-start: 1;
   grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-content: space-evenly;
+  padding: 1rem;
+
+  &__label {
+    padding: 0.5rem;
+    border-right: 1px solid $color-black;
+  }
+  &__select {
+    background-color: transparent;
+    color: $color-green-primary;
+    border: none;
+  }
+}
+
+.playerCard {
+  box-sizing: border-box;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 4;
   place-self: center;
@@ -110,8 +139,8 @@
 }
 .required-players-info {
   box-sizing: border-box;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
   place-self: center;

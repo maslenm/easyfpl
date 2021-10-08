@@ -103,6 +103,15 @@
   }
 }
 
+.option-menus {
+  &__label {
+    font-size: 1.2rem;
+  }
+  &__select {
+    text-transform: uppercase;
+  }
+}
+
 .playerStats {
   &--stat-red {
     color: $color-stat-red;
