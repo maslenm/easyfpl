@@ -13,20 +13,20 @@ const Home = () => (
           will help keep track of your official FPL team and transfers.
         </p>
 
-        <Link to="/Login" role="button" className="btn btn--register">
+        <Link to="/login" role="button" className="btn btn--register">
           Register
         </Link>
       </div>
 
       <ul className="menu">
         <li className="menu__item menu__item--1" value="1">
-          <Link to="/PlayerSelector" role="button" className="menu-btn">
+          <Link to="/player-selector" role="button" className="menu-btn">
             <span className="menu-btn__icon">&copy;</span>
             Player Selector
           </Link>
         </li>
         <li li className="menu__item menu__item--2" value="2">
-          <Link to="/Instructions" role="button" className="menu-btn">
+          <Link to="/instructions" role="button" className="menu-btn">
             <span className="menu-btn__icon">&copy;</span>
             Instructions
           </Link>

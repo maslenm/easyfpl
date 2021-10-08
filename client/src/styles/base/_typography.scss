@@ -6,6 +6,22 @@
   &--start {
     font-size: 2.5rem;
   }
+
+  &--addPlayer {
+    text-transform: uppercase;
+  }
+  &--myTeam {
+    text-transform: uppercase;
+  }
+
+  &--search {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  &--reset {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
 }
 
 .menu-btn {
@@ -74,4 +90,54 @@
   font-size: 1.3rem;
   font-weight: $font-weight-bold;
   text-decoration: none;
+}
+
+.tab-group {
+  font-size: 1.4rem;
+
+  &__tab {
+    font-weight: $font-weight-light;
+    &--active {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.playerStats {
+  &--stat-red {
+    color: $color-stat-red;
+    text-decoration: underline;
+  }
+  &--stat-green {
+    color: $color-stat-green;
+    text-decoration: underline;
+  }
+}
+
+.required-players-info {
+  font-size: 0.9rem;
+  &__header {
+    text-transform: capitalize;
+  }
+}
+
+.required-player {
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+}
+
+.filters {
+  &__btn {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+    &--active {
+      font-weight: $font-weight-xbold;
+    }
+  }
+}
+
+.filters-header__title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }

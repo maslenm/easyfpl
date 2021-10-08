@@ -8,7 +8,7 @@ const Header = () => (
       <span className="header__title--span">Player Manager Tool</span>
     </h1>
 
-    <Link to="/Login" role="button" className="btn btn--login-register">
+    <Link to="/login" role="button" className="btn btn--login-register">
       Log in / Register
     </Link>
 
