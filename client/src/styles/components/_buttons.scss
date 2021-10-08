@@ -23,6 +23,7 @@
     margin: 0.2rem;
     place-self: center;
   }
+
   &--start {
     display: block;
     color: $color-white;
@@ -35,11 +36,41 @@
     background-color: $color-green-primary;
     margin: 1rem;
   }
+
   &--form-register {
     display: block;
     color: $color-white;
     background-color: $color-purple-primary;
     margin: 1rem;
+  }
+
+  &--addPlayer {
+    color: $color-white;
+    background-color: $color-green-primary;
+    margin: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+  }
+
+  &--myTeam {
+    color: $color-black;
+    background-color: $color-white;
+    margin: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+  }
+
+  &--search {
+    color: $color-white;
+    background-color: $color-green-primary;
+    margin: 2rem;
+    width: 9.5rem;
+  }
+  &--reset {
+    color: $color-white;
+    background-color: $color-stat-red;
+    margin: 2rem;
+    width: 9.5rem;
   }
 }
 

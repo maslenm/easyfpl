@@ -6,6 +6,22 @@
   &--start {
     font-size: 2.5rem;
   }
+
+  &--addPlayer {
+    text-transform: uppercase;
+  }
+  &--myTeam {
+    text-transform: uppercase;
+  }
+
+  &--search {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  &--reset {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
 }
 
 .menu-btn {
@@ -108,4 +124,20 @@
 .required-player {
   text-transform: uppercase;
   font-weight: $font-weight-bold;
+}
+
+.filters {
+  &__btn {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+
+    &--active {
+      font-weight: $font-weight-xbold;
+    }
+  }
+}
+
+.filters-header__title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }

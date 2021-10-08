@@ -18,7 +18,7 @@ const PlayerSelector = () => (
         <div className="playerCard">
           <header className="playerCard__header">
             <h4>PLAYER NAME</h4>
-            <p>xICONx</p>
+            <p className="playerCard__image-placeholder">xICONx</p>
           </header>
           <div className="playerCard-content">
             <ul className="playerCard-content__search-filter-results">
@@ -41,6 +41,83 @@ const PlayerSelector = () => (
               <li className="required-player">1 mid </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <div className="tab-content__buttons">
+        <button className="btn btn--myTeam">&rarr; My Team</button>
+        <button className="btn btn--addPlayer">&rarr; Add Player</button>
+      </div>
+      <section className="filters">
+        <header className="filters-header">
+          <h4 className="filters-header__title">Choose Filters:</h4>
+        </header>
+        <div className="filters__content">
+          <input type="checkbox" id="points" name="points" hidden />
+          <label className="filters__btn filters__btn--active" for="points">
+            points
+          </label>
+          <input type="checkbox" id="mins played" name="mins played" hidden />
+          <label className="filters__btn" for="mins played">
+            mins played
+          </label>
+          <input type="checkbox" id="assists" name="assists" hidden />
+          <label className="filters__btn" for="assists">
+            assists
+          </label>
+          <input type="checkbox" id="goals scored" name="goals scored" hidden />
+          <label
+            className="filters__btn filters__btn--active"
+            for="goals scored"
+          >
+            goals scored
+          </label>
+          <input type="checkbox" id="form" name="form" hidden />
+          <label className="filters__btn" for="form">
+            form
+          </label>
+          <input type="checkbox" id="yellow cards" name="yellow cards" hidden />
+          <label className="filters__btn" for="yellow cards">
+            yellow cards
+          </label>
+          <input type="checkbox" id="red cards" name="red cards" hidden />
+          <label className="filters__btn" for="red cards">
+            red cards
+          </label>
+          <input type="checkbox" id="clean sheets" name="clean sheets" hidden />
+          <label className="filters__btn" for="clean sheets">
+            clean sheets
+          </label>
+          <input type="checkbox" id="bonus points" name="bonus points" hidden />
+          <label
+            className="filters__btn filters__btn--active"
+            for="bonus points"
+          >
+            bonus points
+          </label>
+          <input type="checkbox" id="selected" name="selected" hidden />
+          <label className="filters__btn" for="selected">
+            selected
+          </label>
+          <input type="checkbox" id="ICT index" name="ICT index" hidden />
+          <label className="filters__btn" for="ICT index">
+            ICT index
+          </label>
+          <input type="checkbox" id="influence" name="influence" hidden />
+          <label className="filters__btn" for="influence">
+            influence
+          </label>
+          <input type="checkbox" id="creativity" name="creativity" hidden />
+          <label className="filters__btn" for="creativity">
+            creativity
+          </label>
+          <input type="checkbox" id="threat" name="threat" hidden />
+          <label className="filters__btn" for="threat">
+            threat
+          </label>
+        </div>
+        <div className="search-reset-buttons">
+          <button className="btn btn--reset">Reset</button>
+          <button className="btn btn--search">Search</button>
         </div>
       </section>
     </section>
