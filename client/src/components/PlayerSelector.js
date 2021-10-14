@@ -17,45 +17,51 @@ const PlayerSelector = () => (
       <section className="tab-content">
         <div className="option-menus">
           <div className="option-menu">
-            <label className="option-menus__label" for="position-select">
+            <label className="option-menu__label" for="position-select">
               Position
             </label>
-
             <select
-              className="option-menus__select"
+              className="option-menu__select"
               name="position"
               id="position"
             >
-              <option value="fwd">fwd</option>
+              <option selected value="fwd">
+                fwd
+              </option>
               <option value="mid">mid</option>
               <option value="def">def</option>
               <option value="goal">goal</option>
+              <i class="fas fa-caret-down"></i>
             </select>
           </div>
 
           <div className="option-menu">
-            <label className="option-menus__label" for="budget-select">
+            <label className="option-menu__label" for="budget-select">
               Budget
             </label>
 
-            <select className="option-menus__select" name="budget" id="budget">
-              <option value="4.0">4.0</option>
-              <option value="5.0">5.0</option>
-              <option value="6.0">6.0</option>
-              <option value="7.0">7.0</option>
+            <select className="option-menu__select" name="budget" id="budget">
+              <option selected value="4.0">
+                4.0&nbsp;
+              </option>
+              <option value="5.0">5.0&nbsp;</option>
+              <option value="6.0">6.0&nbsp;</option>
+              <option value="7.0">7.0&nbsp;</option>
             </select>
           </div>
 
           <div className="option-menu">
-            <label className="option-menus__label" for="games-select">
+            <label className="option-menu__label" for="games-select">
               Games
             </label>
 
-            <select className="option-menus__select" name="games" id="games">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
+            <select className="option-menu__select" name="games" id="games">
+              <option selected value="1">
+                1&nbsp;
+              </option>
+              <option value="2">2&nbsp;</option>
+              <option value="3">3&nbsp;</option>
+              <option value="4">4&nbsp;</option>
             </select>
           </div>
         </div>
