@@ -42,6 +42,7 @@
 
     &--active {
       border-bottom: 3px solid $color-purple-primary;
+      background-color: $color-tab-active-bg;
       color: $color-black;
     }
   }
