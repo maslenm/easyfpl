@@ -4,12 +4,12 @@
   grid-column-start: 1;
   grid-column-end: -1;
   padding: 1rem;
+  place-self: center;
 
   &__title {
     padding: 0;
     margin: 0;
     text-align: center;
-    border-bottom: 2px solid #e5e5e5;
     color: $color-black;
   }
 }
@@ -70,22 +70,11 @@
   grid-column-end: -1;
   justify-content: space-evenly;
   padding: 1rem;
-  // background-color: $color-white;
-  // border: 1px solid $color-black;
-  // width: fit-content;
-  // padding: 0.5rem;
-  // margin: 0;
-  // border-radius: 10px;
 }
 
 .option-menu {
   position: relative;
   display: flex;
-  // grid-row-start: 1;
-  // grid-row-end: 2;
-  // grid-column-start: 1;
-  // grid-column-end: -1;
-  // justify-content: space-evenly;
   background-color: $color-white;
   border: 1px solid $color-black;
   border-radius: 10px;
@@ -114,8 +103,8 @@
   grid-column-end: 4;
   place-self: center;
   text-align: center;
-  border: 2px solid $border-color-primary;
-  border-radius: 10px;
+  border: 1px solid $border-color-primary;
+  border-radius: 5px;
   padding: 1rem;
   margin: 0;
   margin-top: 1rem;
@@ -199,7 +188,6 @@
   }
 
   &__btn {
-    // flex-basis: 5%;
     padding: 0.5rem;
     margin: 0rem;
     background-color: $color-white;
