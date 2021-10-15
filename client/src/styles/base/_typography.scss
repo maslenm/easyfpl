@@ -69,10 +69,19 @@
 }
 
 .heading-4 {
-  font-size: 1.2rem;
-  font-weight: $font-weight-xbold;
+  font-size: 1.5rem;
+  font-weight: $font-weight-regular;
   margin: 0;
-  padding: 0.5rem;
+  // padding: 0.5rem;
+  &--playerName {
+    font-weight: $font-weight-bold;
+  }
+  &--position {
+    font-weight: $font-weight-bold;
+  }
+  &--team {
+    font-weight: $font-weight-bold;
+  }
 }
 
 .text-unregistered {

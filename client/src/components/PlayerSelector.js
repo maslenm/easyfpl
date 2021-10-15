@@ -68,8 +68,9 @@ const PlayerSelector = () => (
 
         <div className="playerCard">
           <header className="playerCard__header">
-            <h4 className="heading-4">PLAYER NAME</h4>
-            <h4 className="heading-4">POSITION</h4>
+            <h4 className="heading-4 heading-4--playerName">Romelu Lukaku </h4>
+            <h4 className="heading-4 heading-4--position">FWD</h4>
+            <h4 className="heading-4 heading-4--team">CHELSEA</h4>
           </header>
           <div className="playerCard-content">
             <ul className="playerCard-content__search-filter-results">
