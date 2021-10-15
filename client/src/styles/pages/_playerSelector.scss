@@ -18,7 +18,7 @@
   grid-row-start: 2;
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 0.5rem;
+  padding: 0;
   margin: 1rem;
   place-self: center;
   border: 1px solid $border-color-primary;
@@ -37,6 +37,8 @@
     cursor: pointer;
     border-radius: 5px 5px 0px 0px;
     color: $color-tab-inactive;
+    border-bottom: 1px solid $border-color-primary;
+    width: 100%;
 
     &--active {
       border-bottom: 3px solid $color-purple-primary;
@@ -185,6 +187,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0.5;
   }
 
   &__btn {
