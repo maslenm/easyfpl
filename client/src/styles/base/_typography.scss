@@ -68,6 +68,13 @@
   font-weight: $font-weight-xbold;
 }
 
+.heading-4 {
+  font-size: 1.2rem;
+  font-weight: $font-weight-xbold;
+  margin: 0;
+  padding: 0.5rem;
+}
+
 .text-unregistered {
   font-size: 1.2rem;
   font-weight: $font-weight-regular;
@@ -114,14 +121,19 @@
   }
 }
 
+.playerCard-content {
+  font-size: 1.5rem;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+
 .playerStats {
   &--stat-red {
     color: $color-stat-red;
-    text-decoration: underline;
   }
   &--stat-green {
     color: $color-stat-green;
-    text-decoration: underline;
   }
 }
 

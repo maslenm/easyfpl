@@ -68,8 +68,8 @@ const PlayerSelector = () => (
 
         <div className="playerCard">
           <header className="playerCard__header">
-            <h4>PLAYER NAME</h4>
-            <p className="playerCard__image-placeholder">xICONx</p>
+            <h4 className="heading-4">PLAYER NAME</h4>
+            <h4 className="heading-4">POSITION</h4>
           </header>
           <div className="playerCard-content">
             <ul className="playerCard-content__search-filter-results">
