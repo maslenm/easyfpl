@@ -4,6 +4,7 @@
   grid-column-start: 5;
   grid-column-end: 7;
   padding: 1rem;
+  place-self: center;
 
   &__title {
     padding: 0;
@@ -27,7 +28,7 @@
     flex-direction: column;
     box-sizing: border-box;
     border: solid 1px #e5e5e5;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0;
     padding: 0.8rem;
     background-color: $color-white;
@@ -39,7 +40,7 @@
   padding: 1rem;
 }
 
-.menu {
+.home-menu {
   list-style: none;
   padding: 0;
   margin: 3rem 0rem;

@@ -18,16 +18,16 @@ const Home = () => (
         </Link>
       </div>
 
-      <ul className="menu">
-        <li className="menu__item menu__item--1" value="1">
-          <Link to="/player-selector" role="button" className="menu-btn">
-            <span className="menu-btn__icon">&copy;</span>
+      <ul className="home-menu">
+        <li className="home-menu__item home-menu__item--1" value="1">
+          <Link to="/player-selector" role="button" className="home-menu-btn">
+            <span className="home-menu-btn__icon">&copy;</span>
             Player Selector
           </Link>
         </li>
-        <li li className="menu__item menu__item--2" value="2">
-          <Link to="/instructions" role="button" className="menu-btn">
-            <span className="menu-btn__icon">&copy;</span>
+        <li li className="home-menu__item home-menu__item--2" value="2">
+          <Link to="/instructions" role="button" className="home-menu-btn">
+            <span className="home-menu-btn__icon">&copy;</span>
             Instructions
           </Link>
         </li>
