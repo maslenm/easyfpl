@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+.heading-1 {
+  &::after {
+    content: "";
+    display: block;
+    background-color: $border-color-primary;
+    height: 1px;
+    width: 100%;
+  }
+}
