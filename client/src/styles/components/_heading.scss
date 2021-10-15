@@ -11,4 +11,9 @@
     height: 1px;
     width: 100%;
   }
+  &--no-line {
+    &::after {
+      content: "";
+    }
+  }
 }
