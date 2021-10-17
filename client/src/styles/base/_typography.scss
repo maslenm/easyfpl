@@ -9,6 +9,7 @@
 
   &--addPlayer {
     text-transform: uppercase;
+    font-size: 1.2rem;
   }
   &--myTeam {
     text-transform: uppercase;
@@ -71,10 +72,10 @@
 .heading-4 {
   font-size: 1.5rem;
   font-weight: $font-weight-regular;
-  margin: 0;
-  // padding: 0.5rem;
+
   &--playerName {
     font-weight: $font-weight-bold;
+    font-size: 2.5rem;
   }
   &--position {
     font-weight: $font-weight-bold;
@@ -135,6 +136,12 @@
   font-weight: $font-weight-bold;
   letter-spacing: 0.1rem;
   line-height: 2rem;
+}
+
+.playerCard-content {
+  &__header {
+    font-weight: $font-weight-xbold;
+  }
 }
 
 .playerStats {

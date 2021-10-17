@@ -73,16 +73,22 @@ const PlayerSelector = () => (
             <h4 className="heading-4 heading-4--team">CHELSEA</h4>
           </header>
           <div className="playerCard-content">
+            <header className="playerCard-content__header">Stats:</header>
             <ul className="playerCard-content__search-filter-results">
               <li className="playerStats playerStats--stat-green">
                 Points: 55
               </li>
-              <li className="playerStats playerStats--stat-red">Goals: 4</li>
+              <li className="playerStats playerStats--stat-green">Goals: 6</li>
               <li className="playerStats playerStats--stat-green">
                 Bonus points: 3
               </li>
+              <li className="playerStats playerStats--stat-red">Assists: 1</li>
+              <li className="playerStats playerStats--stat-green">
+                Yellow cards: 0
+              </li>
             </ul>
           </div>
+          <button className="btn btn--addPlayer">&rarr; Add Player</button>
         </div>
         <div className="required-players-info">
           <header className="required-players-info__header">
@@ -94,11 +100,10 @@ const PlayerSelector = () => (
             </ul>
           </div>
         </div>
+        <div className="tab-content__buttons">
+          <button className="btn btn--myTeam">&rarr; My Team</button>
+        </div>
       </section>
-      <div className="tab-content__buttons">
-        <button className="btn btn--myTeam">&rarr; My Team</button>
-        <button className="btn btn--addPlayer">&rarr; Add Player</button>
-      </div>
       <section className="filters">
         <header className="filters-header">
           <h4 className="filters-header__title">Choose Filters:</h4>
@@ -113,7 +118,7 @@ const PlayerSelector = () => (
             mins played
           </label>
           <input type="checkbox" id="assists" name="assists" hidden />
-          <label className="filters__btn" for="assists">
+          <label className="filters__btn filter__btn--active" for="assists">
             assists
           </label>
           <input type="checkbox" id="goals scored" name="goals scored" hidden />
@@ -128,7 +133,10 @@ const PlayerSelector = () => (
             form
           </label>
           <input type="checkbox" id="yellow cards" name="yellow cards" hidden />
-          <label className="filters__btn" for="yellow cards">
+          <label
+            className="filters__btn filter__btn--active"
+            for="yellow cards"
+          >
             yellow cards
           </label>
           <input type="checkbox" id="red cards" name="red cards" hidden />
