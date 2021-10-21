@@ -17,6 +17,19 @@ const PlayerSelector = () => (
       <section className="tab-content">
         <div className="option-menus">
           <div className="option-menu">
+            <label className="option-menu__label" for="season-select">
+              Season
+            </label>
+            <select className="option-menu__select" name="season" id="season">
+              <option selected value="2021/22">
+                2021/22
+              </option>
+              <option value="2020/21">2020/21</option>
+              <i class="fas fa-caret-down"></i>
+            </select>
+          </div>
+
+          <div className="option-menu">
             <label className="option-menu__label" for="position-select">
               Position
             </label>
@@ -90,17 +103,27 @@ const PlayerSelector = () => (
           </div>
           <button className="btn btn--addPlayer">&rarr; Add Player</button>
         </div>
-        <div className="required-players-info">
-          <header className="required-players-info__header">
-            <h4>Players Required</h4>
+        <div className="team-info">
+          <header className="team-info__header">
+            <h4 className="heading-4 heading-4--team-info">Team Info</h4>
           </header>
-          <div className="required-players-content">
-            <ul className="required-players-content__players">
-              <li className="required-player">1 mid </li>
-            </ul>
+          <div className="required-players-info">
+            <header className="required-players-info__header">
+              <h4 className="heading-4 heading-4--required-players-info">
+                Players Required
+              </h4>
+            </header>
+            <div className="required-players-content">
+              <ul className="required-players-content__players">
+                <li className="required-player">1 mid </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="tab-content__buttons">
+          <header className="tab-content-links__header">
+            <h4 className="heading-4 heading-4--quick-links">Quick Links</h4>
+          </header>
           <button className="btn btn--myTeam">&rarr; My Team</button>
         </div>
       </section>
