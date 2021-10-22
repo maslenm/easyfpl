@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr min-content;
   box-sizing: border-box;
-  border: solid 1px #e5e5e5;
+  border: solid 1px $border-color-primary;
   border-radius: 5px;
   min-width: 12rem;
   max-width: fit-content;
