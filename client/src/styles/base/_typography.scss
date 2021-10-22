@@ -9,6 +9,7 @@
 
   &--addPlayer {
     text-transform: uppercase;
+    font-size: 1.2rem;
   }
   &--myTeam {
     text-transform: uppercase;
@@ -71,15 +72,27 @@
 .heading-4 {
   font-size: 1.5rem;
   font-weight: $font-weight-regular;
-  margin: 0;
-  // padding: 0.5rem;
+
   &--playerName {
     font-weight: $font-weight-bold;
+    font-size: 2.5rem;
   }
   &--position {
     font-weight: $font-weight-bold;
   }
   &--team {
+    font-weight: $font-weight-bold;
+  }
+  &--quick-links {
+    font-size: 1.3rem;
+    font-weight: $font-weight-bold;
+  }
+  &--team-info {
+    font-weight: $font-weight-bold;
+    font-size: 1.3rem;
+  }
+  &--required-players-info {
+    font-size: 1rem;
     font-weight: $font-weight-bold;
   }
 }
@@ -137,12 +150,18 @@
   line-height: 2rem;
 }
 
+.playerCard-content {
+  &__header {
+    font-weight: $font-weight-xbold;
+  }
+}
+
 .playerStats {
   &--stat-red {
-    color: $color-stat-red;
+    // color: $color-stat-red;
   }
   &--stat-green {
-    color: $color-stat-green;
+    // color: $color-stat-green;
   }
 }
 
@@ -172,4 +191,7 @@
 .filters-header__title {
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+.tab-content-links__header {
 }

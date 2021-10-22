@@ -50,19 +50,29 @@
 
 .tab-content {
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-columns:
     1fr repeat(2, minmax(min-content, 6rem))
     1fr;
   grid-gap: 0.5rem;
   padding-top: 1rem;
+  margin: 0 0.5rem;
 
   &__buttons {
-    display: flex;
-    place-content: center;
-    padding: 0 2rem;
+    padding: 0;
     margin: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    place-self: center;
+    min-width: 10rem;
   }
+}
+
+.tab-content-links__header {
+  display: flex;
+  place-content: center;
+  margin: 0.5rem;
 }
 
 .option-menus {
@@ -71,24 +81,24 @@
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: -1;
+  grid-gap: 2rem;
   justify-content: space-evenly;
   padding: 1rem;
 }
 
 .option-menu {
   position: relative;
-  display: flex;
-  background-color: $color-white;
-  border: 1px solid $color-black;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   border-radius: 10px;
   width: fit-content;
   padding: 0.8rem;
   padding-left: 1rem;
-  margin: 0;
+  text-align: center;
 
   &__label {
     padding-right: 1rem;
-    border-right: 1px solid $color-black;
+    border-right: 1px solid $border-color-primary;
   }
   &__select {
     background-color: transparent;
@@ -107,19 +117,36 @@
   place-self: center;
   text-align: center;
   border: 1px solid $border-color-primary;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0;
   margin: 0;
   margin-top: 1rem;
-  min-width: 16rem;
-  height: 20rem;
+  min-width: 20rem;
   background-color: $color-white;
 
   &__header {
-    color: $color-white;
-    background-color: $color-green-primary;
+    color: $color-black;
+    background-color: $color-white;
     border-bottom: 2px solid $border-color-primary;
     padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+  }
+
+  .heading-4 {
+    margin: 0;
+    &--playerName {
+      margin: 0;
+    }
+    &--position {
+      background-color: yellow;
+      padding: 0.2rem;
+      width: fit-content;
+      margin: 0 auto;
+    }
+    &--team {
+      margin: 0;
+    }
   }
 
   &__image-placeholder {
@@ -141,26 +168,73 @@
     flex-direction: column;
     place-self: center;
     list-style: none;
-    margin: 1rem 0;
+    margin: 1rem 1rem;
     padding: 0;
     text-align: left;
+    max-height: 10.5rem;
+    min-height: min-content;
+    overflow-y: scroll;
+    background-color: $border-color-primary;
+    border-radius: 5px;
+  }
+
+  &__header {
+    background-color: $color-purple-primary;
+    color: $color-white;
   }
 }
+
+.playerStats {
+  padding: 0.3rem;
+  border-radius: 5px 5px 0 0;
+  margin: 0.1rem;
+
+  &--stat-green {
+    border-bottom: 2px solid $color-green-primary;
+  }
+  &--stat-red {
+    border-bottom: 2px solid red;
+  }
+}
+
+.heading-4 {
+  &--quick-links {
+    border-bottom: 1px solid $color-black;
+  }
+  &--team-info {
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+.team-info {
+  place-self: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  padding: 0;
+  margin: 0;
+  place-self: center;
+  min-width: 10rem;
+  &__header {
+    display: flex;
+    place-content: center;
+    margin: 0.5rem;
+  }
+}
+
 .required-players-info {
   box-sizing: border-box;
   grid-row-start: 2;
   grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
   place-self: center;
   text-align: center;
   border: 2px solid $border-color-primary;
   border-radius: 10px;
-  padding: 0.5rem;
-  margin: 0;
-  margin-top: 1rem;
+  margin: 1rem;
   min-width: 10rem;
-  height: min-content;
   background-color: $border-color-primary;
 
   &__header {
@@ -171,9 +245,18 @@
 
 .required-players-content__players {
   list-style: none;
-  margin-top: 1rem;
+  margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.required-player {
+  padding: 0.5rem;
+}
+
+.heading-4--required-players-info {
+  margin: 0.2rem;
+  padding: 0.5rem;
 }
 
 .filters {
