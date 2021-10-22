@@ -156,15 +156,6 @@
   }
 }
 
-.playerStats {
-  &--stat-red {
-    // color: $color-stat-red;
-  }
-  &--stat-green {
-    // color: $color-stat-green;
-  }
-}
-
 .required-players-info {
   font-size: 0.9rem;
   &__header {
@@ -191,7 +182,4 @@
 .filters-header__title {
   font-size: 1.2rem;
   text-transform: uppercase;
-}
-
-.tab-content-links__header {
 }
