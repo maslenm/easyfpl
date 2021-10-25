@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { toggleMenu } from "../actions/MenuAction";
-// import NavBtn from "./NavBtn";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   const menu = useSelector((state) => state.menuOpen);
@@ -30,6 +29,9 @@ const Header = () => {
       >
         <div className="nav-btn__burger"></div>
       </div>
+      <nav className={!menu ? "mobile-nav-hidden" : "mobile-nav"}>
+        <MobileNav />
+      </nav>
     </header>
   );
 };
