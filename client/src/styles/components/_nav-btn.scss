@@ -31,6 +31,18 @@
     &::after {
       transform: translateY(10px);
     }
+    // BUTTON CHANGE
+    &--menuOpen {
+      background-color: transparent;
+      transform: translateX(-50px);
+
+      &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
+    }
   }
 
   &--menuOpen {

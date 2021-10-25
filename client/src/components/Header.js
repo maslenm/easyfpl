@@ -27,7 +27,13 @@ const Header = () => {
         className={!menu ? "nav-btn" : "nav-btn nav-btn--menuOpen"}
         onClick={() => dispatch(toggleMenu())}
       >
-        <div className="nav-btn__burger"></div>
+        <div
+          className={
+            !menu
+              ? "nav-btn__burger"
+              : "nav-btn__burger nav-btn__burger--menuOpen"
+          }
+        ></div>
       </div>
       <nav className={!menu ? "mobile-nav-hidden" : "mobile-nav"}>
         <MobileNav />
